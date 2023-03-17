@@ -26,7 +26,7 @@ function Formulario({ pacientes, setPacientes, paciente, setPaciente }) {
       email,
       fecha,
       sintomas,
-      _id: '',
+      _id: "",
     };
 
     if (paciente?._id) {
@@ -39,7 +39,7 @@ function Formulario({ pacientes, setPacientes, paciente, setPaciente }) {
         }
       });
       setPacientes([...pacientesActualizados]);
-      setPaciente({})
+      setPaciente({});
     } else {
       pacienteNew._id = generarId();
       setPacientes([...pacientes, pacienteNew]);
